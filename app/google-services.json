@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "601367533573",
+    "project_id": "hilingin",
+    "storage_bucket": "hilingin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601367533573:android:caa440c0a8928faee7e46c",
+        "android_client_info": {
+          "package_name": "com.example.hilingin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601367533573-hrdjdf5brriptrrfhhlm85jufujd9et5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hilingin",
+            "certificate_hash": "3a328687c97470cf929ba5fc66c6342b6620de47"
+          }
+        },
+        {
+          "client_id": "601367533573-7p43pcnf1ufg36qkmk1f5i6atbiiskf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA6Uw9eLalQFqldzXEWj_7R2wi12V9NIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601367533573-7p43pcnf1ufg36qkmk1f5i6atbiiskf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
