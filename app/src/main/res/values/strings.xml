@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hilingin</string>
+    <string name="hilingin">HILINGIN</string>
+    <string name="selamat_dat">Selamat Datang</string>
+    <string name="silahkan_lo">silahkan login!</string>
+    <string name="email">email</string>
+    <string name="password">Password</string>
 </resources>
