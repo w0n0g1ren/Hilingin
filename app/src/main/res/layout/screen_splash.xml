@@ -16,7 +16,7 @@
         <TextView
             android:id="@+id/hilingin"
             android:layout_width="325dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/Gluten_Medium"
             android:layout_height="89dp"
             android:gravity="center_horizontal|top"
             android:text="@string/hilingin"

@@ -20,4 +20,12 @@
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">#E8F9FD</item>
     </style>
+    <style name="lupa_passwo">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#E8F9FD</item>
+    </style>
+    <style name="belum_punya">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#E8F9FD</item>
+    </style>
 </resources>

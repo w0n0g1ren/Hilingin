@@ -14,6 +14,7 @@
 
     <TextView
         android:id="@+id/selamat_dat"
+        android:fontFamily="@font/DMSans_Medium"
         android:layout_width="192dp"
         android:layout_height="33dp"
         android:layout_alignParentLeft="true"
@@ -28,6 +29,7 @@
 
     <TextView
         android:id="@+id/silahkan_lo"
+        android:fontFamily="@font/DMSans_Medium"
         android:layout_width="153dp"
         android:layout_height="33dp"
         android:layout_alignParentLeft="true"
@@ -42,6 +44,7 @@
 
     <TextView
         android:id="@+id/email"
+        android:fontFamily="@font/Genos_Regular"
         android:layout_width="41dp"
         android:layout_height="24dp"
         android:layout_alignParentLeft="true"
@@ -62,7 +65,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/edittext"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/Genos_Regular"
         android:hint="Masukkan alamat email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -79,8 +82,8 @@
         android:layout_height="22dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
-        android:fontFamily="sans-serif"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/Genos_Regular"
         android:gravity="center_horizontal|top"
         android:text="@string/password"
         android:textAppearance="@style/password"
@@ -93,9 +96,8 @@
         android:id="@+id/etpasswordlogin"
         android:layout_width="329dp"
         android:layout_height="42dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/edittext"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/Genos_Regular"
         android:hint="Masukkan Password"
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -106,16 +108,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
+    <TextView
+        android:id="@+id/lupa_passwo"
+        android:fontFamily="@font/Genos_Regular"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="41dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/lupa_passwo"
+        android:textAppearance="@style/lupa_passwo"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpasswordlogin"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
         android:id="@+id/btnlogin"
+        android:fontFamily="@font/Genos_Regular"
         android:layout_width="112dp"
         android:layout_height="42dp"
         android:layout_marginTop="76dp"
         android:background="@drawable/button_background"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etpasswordlogin" />
+
+    <TextView
+        android:id="@+id/belum_punya"
+        android:fontFamily="@font/Genos_Regular"
+        android:layout_width="164dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/belum_punya"
+        android:textAppearance="@style/belum_punya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlogin"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

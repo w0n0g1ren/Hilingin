@@ -5,4 +5,6 @@
     <string name="silahkan_lo">silahkan login!</string>
     <string name="email">email</string>
     <string name="password">Password</string>
+    <string name="lupa_passwo">Lupa Password?</string>
+    <string name="belum_punya">Belum Punya akun? Daftar</string>
 </resources>
