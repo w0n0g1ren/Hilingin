@@ -28,4 +28,12 @@
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">#E8F9FD</item>
     </style>
+    <style name="nama">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#E8F9FD</item>
+    </style>
+    <style name="silahkan_bu">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#E8F9FD</item>
+    </style>
 </resources>

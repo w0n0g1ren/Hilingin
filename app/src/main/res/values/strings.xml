@@ -7,4 +7,7 @@
     <string name="password">Password</string>
     <string name="lupa_passwo">Lupa Password?</string>
     <string name="belum_punya">Belum Punya akun? Daftar</string>
+    <string name="nama">Nama</string>
+    <string name="silahkan_bu">Silahkan Buat Akun!</string>
+
 </resources>
