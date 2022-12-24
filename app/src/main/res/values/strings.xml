@@ -9,5 +9,6 @@
     <string name="belum_punya">Belum Punya akun? Daftar</string>
     <string name="nama">Nama</string>
     <string name="silahkan_bu">Silahkan Buat Akun!</string>
-
+    <string name="transaksi">Transaksi</string>
+    <string name="lengkapi_da">Lengkapi data pemesanan di sini</string>
 </resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TransaksiActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="57dp"
+            android:text="@string/transaksi"
+            android:textAppearance="@style/transaksi"
+            android:lineSpacingExtra="-8sp"
+            android:gravity="center_horizontal|top"
+            />
+        <TextView
+            android:id="@+id/lengkapi_da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:text="@string/lengkapi_da"
+            android:textAppearance="@style/lengkapi_da"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.5sp"
+            android:gravity="center_horizontal|top" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/nama"
+            android:gravity="top" />
+        <EditText
+            android:id="@+id/namatransaksi"
+            android:background="@drawable/edittexttransaksi"
+            android:layout_marginLeft="26dp"
+            android:layout_width="330dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Telepon"
+            android:gravity="top" />
+        <EditText
+            android:id="@+id/telepontransaksi"
+            android:background="@drawable/edittexttransaksi"
+            android:layout_marginLeft="26dp"
+            android:inputType="number"
+            android:layout_width="330dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:gravity="top" />
+        <EditText
+            android:id="@+id/emailtransaksi"
+            android:background="@drawable/edittexttransaksi"
+            android:layout_marginLeft="26dp"
+            android:inputType="textEmailAddress"
+            android:layout_width="330dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Jumlah Tiket"
+            android:gravity="top" />
+        <NumberPicker
+            android:id="@+id/nptiket"
+            android:layout_marginLeft="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Tanggal"
+            android:gravity="top" />
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:gravity="center"
+                android:background="@drawable/corner"
+                android:id="@+id/idBtnPickDate"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:text="Pilih"
+                android:textAllCaps="false" />
+            <TextView
+                android:id="@+id/tampiltanggal"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:text="tanggal"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/pesantiket"
+        android:background="@drawable/corner"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pesan tiket"/>
+
+
+
+
+
+</LinearLayout>
