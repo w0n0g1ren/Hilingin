@@ -6,4 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="341dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/finding"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Primary"
+        android:hint="@string/finding"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_destinasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Primary"
+        app:layout_constraintStart_toStartOf="@id/finding"
+        app:layout_constraintTop_toBottomOf="@id/finding"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destinasi"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_destinasi"
+        app:layout_constraintStart_toStartOf="@id/btn_destinasi"
+        app:layout_constraintTop_toBottomOf="@id/btn_destinasi" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_kuliner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/Primary"
+        app:layout_constraintStart_toEndOf="@id/btn_destinasi"
+        app:layout_constraintTop_toTopOf="@id/btn_destinasi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kuliner"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_kuliner"
+        app:layout_constraintStart_toStartOf="@id/btn_kuliner"
+        app:layout_constraintTop_toBottomOf="@id/btn_kuliner" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/Primary"
+        app:layout_constraintStart_toEndOf="@id/btn_kuliner"
+        app:layout_constraintTop_toTopOf="@id/btn_kuliner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_event"
+        app:layout_constraintStart_toStartOf="@id/btn_event"
+        app:layout_constraintTop_toBottomOf="@id/btn_event" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/Primary"
+        app:layout_constraintStart_toEndOf="@id/btn_event"
+        app:layout_constraintTop_toTopOf="@id/btn_event" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotel"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_hotel"
+        app:layout_constraintStart_toStartOf="@id/btn_hotel"
+        app:layout_constraintTop_toBottomOf="@id/btn_hotel" />
+
+    <TextView
+        android:id="@+id/txt_populer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/populer"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@id/btn_destinasi"
+        app:layout_constraintTop_toBottomOf="@id/btn_destinasi"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
