@@ -46,4 +46,29 @@
         <item name="android:letterSpacing">-0.02</item>
         <item name="android:textColor">#000000</item>
     </style>
+    <style name="hallo_samsu">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="populer_di_">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="rekomendasi">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="malioboro">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="kota_maliob">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#000000</item>
+    </style>
 </resources>
