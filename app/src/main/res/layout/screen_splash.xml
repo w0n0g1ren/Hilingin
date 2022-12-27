@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:background="@drawable/background_splashScreen">
+        android:background="@drawable/background_splashscreen">
 
         <TextView
             android:id="@+id/hilingin"
             android:layout_width="325dp"
-            android:fontFamily="@font/Gluten_Medium"
+            android:fontFamily="@font/gluten_medium"
             android:layout_height="89dp"
             android:gravity="center_horizontal|top"
             android:text="@string/hilingin"

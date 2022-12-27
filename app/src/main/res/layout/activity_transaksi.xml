@@ -57,6 +57,7 @@
             android:gravity="top" />
         <EditText
             android:id="@+id/namatransaksi"
+            android:padding="10dp"
             android:background="@drawable/edittexttransaksi"
             android:layout_marginLeft="26dp"
             android:layout_width="330dp"
@@ -73,6 +74,7 @@
             android:gravity="top" />
         <EditText
             android:id="@+id/telepontransaksi"
+            android:padding="10dp"
             android:background="@drawable/edittexttransaksi"
             android:layout_marginLeft="26dp"
             android:inputType="number"
@@ -90,6 +92,7 @@
             android:gravity="top" />
         <EditText
             android:id="@+id/emailtransaksi"
+            android:padding="10dp"
             android:background="@drawable/edittexttransaksi"
             android:layout_marginLeft="26dp"
             android:inputType="textEmailAddress"
@@ -139,7 +142,7 @@
                 android:id="@+id/tampiltanggal"
                 android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
-                android:text="tanggal"
+                android:text="00-00-0000"
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>

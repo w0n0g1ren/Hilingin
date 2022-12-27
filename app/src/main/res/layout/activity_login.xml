@@ -14,7 +14,7 @@
 
     <TextView
         android:id="@+id/selamat_dat"
-        android:fontFamily="@font/DMSans_Medium"
+        android:fontFamily="@font/dmsans_medium"
         android:layout_width="192dp"
         android:layout_height="33dp"
         android:layout_alignParentLeft="true"
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/silahkan_lo"
-        android:fontFamily="@font/DMSans_Medium"
+        android:fontFamily="@font/dmsans_medium"
         android:layout_width="153dp"
         android:layout_height="33dp"
         android:layout_alignParentLeft="true"
@@ -44,7 +44,7 @@
 
     <TextView
         android:id="@+id/email"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:layout_width="41dp"
         android:layout_height="24dp"
         android:layout_alignParentLeft="true"
@@ -65,7 +65,7 @@
         android:layout_height="42dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/edittext"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:hint="Masukkan alamat email"
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -83,7 +83,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="80dp"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:gravity="center_horizontal|top"
         android:text="@string/password"
         android:textAppearance="@style/password"
@@ -97,7 +97,7 @@
         android:layout_width="329dp"
         android:layout_height="42dp"
         android:background="@drawable/edittext"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:hint="Masukkan Password"
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -110,7 +110,7 @@
 
     <TextView
         android:id="@+id/lupa_passwo"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:layout_width="110dp"
         android:layout_height="20dp"
         android:layout_alignParentLeft="true"
@@ -128,7 +128,7 @@
 
     <Button
         android:id="@+id/btnlogin"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:layout_width="112dp"
         android:layout_height="42dp"
         android:layout_marginTop="76dp"
@@ -141,7 +141,7 @@
 
     <TextView
         android:id="@+id/belum_punya"
-        android:fontFamily="@font/Genos_Regular"
+        android:fontFamily="@font/genos_regular"
         android:layout_width="164dp"
         android:layout_height="18dp"
         android:layout_alignParentLeft="true"
