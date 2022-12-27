@@ -99,7 +99,7 @@
         android:background="@drawable/edittext"
         android:fontFamily="@font/genos_regular"
         android:hint="Masukkan Password"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#0AA1DD"
         android:textColorHint="#0AA1DD"

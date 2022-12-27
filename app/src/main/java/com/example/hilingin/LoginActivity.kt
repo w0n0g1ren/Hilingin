@@ -44,6 +44,11 @@ class LoginActivity : AppCompatActivity() {
             }
             LoginFirebase(email,password)
         }
+
+        binding.belumPunya.setOnClickListener { 
+            val intent = Intent(this,RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun LoginFirebase(email: String, password: String) {

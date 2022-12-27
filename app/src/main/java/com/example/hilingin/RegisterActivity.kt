@@ -1,9 +1,11 @@
 package com.example.hilingin
 
+import android.content.Intent
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.renderscript.ScriptGroup.Binding
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -36,7 +38,9 @@ class RegisterActivity : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(takeemail, takepassword)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
+                        val intent = Intent(this,LoginActivity::class.java)
                         Toast.makeText(this, "Input berhasil", Toast.LENGTH_SHORT).show()
+                        startActivity(intent)
                     } else {
                         Toast.makeText(this, "Input gagal", Toast.LENGTH_SHORT).show()
                     }
