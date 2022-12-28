@@ -16,4 +16,6 @@
     <string name="rekomendasi">Rekomendasi kami</string>
     <string name="malioboro">Malioboro</string>
     <string name="kota_maliob">Kota Malioboro merupakan salah satu daerah di Yogyakarta yang memiliki....</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

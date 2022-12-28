@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navbar"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.hilingin.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/pesanankFragment"
+        android:name="com.example.hilingin.fragment.PesanankFragment"
+        android:label="fragment_pesanank"
+        tools:layout="@layout/fragment_pesanank" />
+    <fragment
+        android:id="@+id/akunFragment"
+        android:name="com.example.hilingin.fragment.AkunFragment"
+        android:label="fragment_akun"
+        tools:layout="@layout/fragment_akun" />
+    <fragment
+        android:id="@+id/wisataFragment"
+        android:name="com.example.hilingin.fragment.WisataFragment"
+        android:label="fragment_wisata"
+        tools:layout="@layout/fragment_wisata" />
+</navigation>
