@@ -1,5 +1,6 @@
 package com.example.hilingin.fragment
 
+import android.app.Activity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hilingin.R
+import com.example.hilingin.MainActivity
 import com.example.hilingin.adapter.adapter
 import com.example.hilingin.databinding.FragmentWisataBinding
 import com.example.hilingin.model.tempat_wisata
@@ -19,12 +20,6 @@ class WisataFragment : Fragment() {
     private val Binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding?.recyclerviewtempatwisata?.apply {
-            layoutManager = LinearLayoutManager(context)
-        }
-        fetchData()
-
-
     }
 
     private fun fetchData() {
@@ -32,8 +27,9 @@ class WisataFragment : Fragment() {
             .get()
             .addOnSuccessListener  { documents ->
             for (document in documents){
-                val user = documents.toObjects(tempat_wisata::class.java)
-                _binding?.recyclerviewtempatwisata?.adapter = context?.let { adapter(it, user) }
+
+                val twambil = documents.toObjects(tempat_wisata::class.java)
+               _binding?.recyclerviewtempatwisata?.adapter = adapter(context as MainActivity, twambil)
             }
 
         }
@@ -47,8 +43,14 @@ class WisataFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         _binding = FragmentWisataBinding.inflate(inflater, container, false)
+        _binding?.recyclerviewtempatwisata?.apply {
+            layoutManager = LinearLayoutManager(activity)
+        }
+        fetchData()
         return Binding.root
+
     }
 }

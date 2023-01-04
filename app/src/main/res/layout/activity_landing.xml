@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0AA1DD"
+    tools:context=".LandingActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        tools:srcCompat="@drawable/check1" />
+
+    <Button
+        android:id="@+id/pesantiket"
+        android:background="@drawable/corner"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:shadowColor="@color/black"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KEMBALI"/>
+
+
+
+</LinearLayout>

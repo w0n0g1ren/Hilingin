@@ -34,9 +34,11 @@ class adapter(private val context: Context, private val model: List<tempat_wisat
         holder.harga.text = list.tiket.toString()
         holder.lokasi.text = list.lokasi
 
-        Glide.with(context)
-            .load(list.gambar)
-            .into(holder.gambar_holder)
+        if (context != null) {
+            Glide.with(context)
+                .load(list.gambar)
+                .into(holder.gambar_holder)
+        }
     }
 
     override fun getItemCount(): Int {

@@ -108,11 +108,14 @@
             android:layout_marginTop="20dp"
             android:text="Jumlah Tiket"
             android:gravity="top" />
-        <NumberPicker
-            android:id="@+id/nptiket"
-            android:layout_marginLeft="26dp"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"/>
+
+      <EditText
+          android:id="@+id/jmltikettransaksi"
+          android:inputType="number"
+          android:layout_marginLeft="26dp"
+          android:background="@drawable/edittexttransaksi"
+          android:layout_width="200dp"
+          android:layout_height="40dp"/>
 
         <TextView
             android:layout_width="wrap_content"
