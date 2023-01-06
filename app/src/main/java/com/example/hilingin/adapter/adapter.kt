@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.hilingin.R
 import com.example.hilingin.model.tempat_wisata
+import com.makeramen.roundedimageview.RoundedImageView
 
 class adapter(private val context: Context, private val model: List<tempat_wisata>) : RecyclerView.Adapter<adapter.UserViewHolder> () {
 
@@ -17,7 +18,7 @@ class adapter(private val context: Context, private val model: List<tempat_wisat
         var nama : TextView = itemView.findViewById(R.id.tempatwisatanama)
         var harga : TextView = itemView.findViewById(R.id.tempatwisataharga)
         var lokasi : TextView = itemView.findViewById(R.id.tempatwisatalokasi)
-        var gambar_holder : ImageView = itemView.findViewById(R.id.tempatwisatagambar)
+        var gambar_holder : RoundedImageView = itemView.findViewById(R.id.tempatwisatagambar)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
