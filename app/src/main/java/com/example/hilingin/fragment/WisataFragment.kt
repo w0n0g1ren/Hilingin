@@ -52,5 +52,7 @@ class WisataFragment : Fragment() {
         fetchData()
         return Binding.root
 
+      
+
     }
 }

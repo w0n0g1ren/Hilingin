@@ -1,15 +1,11 @@
 package com.example.hilingin
 
 import android.content.Intent
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.renderscript.ScriptGroup.Binding
-import android.util.Log
-import android.widget.Button
-import android.widget.EditText
 import android.widget.Toast
 import com.example.hilingin.databinding.ActivityRegisterBinding
+import com.example.hilingin.model.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase

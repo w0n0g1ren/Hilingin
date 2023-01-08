@@ -7,6 +7,11 @@
     tools:context=".fragment.WisataFragment">
 
    <TextView
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="30dp"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:fontFamily="@font/dmsans_medium"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
       android:text="Tempat Wisata"/>

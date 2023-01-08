@@ -1,42 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:orientation="horizontal"
-
+    android:layout_width="match_parent"
+    android:id="@+id/item_list"
     android:gravity="center"
     android:layout_height="wrap_content">
 
-    <com.makeramen.roundedimageview.RoundedImageView
-        app:riv_corner_radius="15dp"
-        android:id="@+id/tempatwisatagambar"
-        android:layout_width="186dp"
-        android:layout_height="142dp"
-        android:src="@drawable/asset_1" />
-
     <LinearLayout
-        android:padding="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tempatwisatanama"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nama Tempat Wisata"/>
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                app:riv_corner_radius="15dp"
+                android:id="@+id/tempatwisatagambar"
+                android:layout_width="186dp"
+                android:layout_height="142dp"
+                android:src="@drawable/asset_1" />
 
-        <TextView
-            android:id="@+id/tempatwisatalokasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lokasi"/>
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tempatwisataharga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="harga"/>
+                <TextView
+                    android:fontFamily="@font/dmsans_medium"
+                    android:textStyle="bold"
+                    android:id="@+id/tempatwisatanama"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tempat Wisata"/>
+
+                <TextView
+                    android:fontFamily="@font/dmsans_medium"
+                    android:id="@+id/tempatwisatalokasi"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi"/>
+
+                <TextView
+                    android:fontFamily="@font/dmsans_medium"
+                    android:id="@+id/tempatwisataharga"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="harga"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#B4B4B4"/>
     </LinearLayout>
-</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
