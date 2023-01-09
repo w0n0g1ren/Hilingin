@@ -22,14 +22,15 @@ class TransaksiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_transaksi)
 
+        button = findViewById(R.id.pesantiket)
         nama = findViewById(R.id.namatransaksi)
         telepon = findViewById(R.id.telepontransaksi)
         email = findViewById(R.id.emailtransaksi)
         tiket = findViewById(R.id.jmltikettransaksi)
 
         var hargamasuk = intent.getStringExtra("hargamasuk")
-        //date
-
+//        //date
+//
         datepicker = findViewById(R.id.idBtnPickDate)
         selectedDateTV = findViewById(R.id.tampiltanggal)
         datepicker.setOnClickListener {
@@ -41,7 +42,6 @@ class TransaksiActivity : AppCompatActivity() {
                 this,
                 { view, year, monthOfYear, dayOfMonth ->
                     selectedDateTV.text = (dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year)
-                    taketanggal2 = (dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year)
 
                 },
                 year,
@@ -50,13 +50,15 @@ class TransaksiActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
-
+        taketanggal2 = selectedDateTV.toString()
+//
+//
         var takenama = nama.text.toString()
         var taketelepon = telepon.text.toString()
         var takeemail = email.text.toString()
         var taketiket = tiket.text.toString()
         var taketanggal = taketanggal2
-
+//
         button.setOnClickListener {
             val intent = Intent(this,CheckOutActivity::class.java)
             intent.putExtra("namatransaksi",takenama)

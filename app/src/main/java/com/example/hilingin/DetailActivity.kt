@@ -41,7 +41,7 @@ class DetailActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val intent = Intent(this,TransaksiActivity::class.java)
-            intent.putExtra("hargamasuk",harga2)
+           // intent.putExtra("hargamasuk",harga2)
             startActivity(intent)
         }
 
