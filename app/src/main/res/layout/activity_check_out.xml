@@ -1,9 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".CheckOutActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:fontFamily="@font/dmsans_medium"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Rincian Pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a6a6a6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="300dp">
+
+            <TextView
+
+                android:text="Nama"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Telepon"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Email"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Tanggal"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Tempat Wisata"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Jumlah Tiket"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+            <TextView
+                android:text="Harga Tiket"
+                android:fontFamily="@font/dmsans_medium"
+                android:textSize="17dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Total"
+                android:fontFamily="@font/dmsans_medium"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="205dp"
+            android:layout_height="300dp">
+
+            <TextView
+                android:id="@+id/checkoutnama"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Paijo"
+                android:gravity="end"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkouttelepon"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="0876554321"
+                android:gravity="end"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkoutemail"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Paijo@gmail.com"
+                android:gravity="end"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/checkouttanggal"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="12-02-2020"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkouttempat"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="Gua Gong"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkouttiket"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="1"
+                android:textSize="17dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkoutharga"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="12000"
+                android:textSize="17dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/checkouttotal"
+                android:fontFamily="@font/dmsans_medium"
+                android:text="12000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a6a6a6"/>
+    <Button
+        android:id="@+id/bayarbuttoncheckout"
+        android:text="bayar"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

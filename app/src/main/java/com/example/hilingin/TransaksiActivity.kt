@@ -29,6 +29,7 @@ class TransaksiActivity : AppCompatActivity() {
         tiket = findViewById(R.id.jmltikettransaksi)
 
         var hargamasuk = intent.getStringExtra("hargamasuk")
+        var namamasuk = intent.getStringExtra("namamasuk")
 //        //date
 //
         datepicker = findViewById(R.id.idBtnPickDate)
@@ -67,6 +68,7 @@ class TransaksiActivity : AppCompatActivity() {
             intent.putExtra("tikettransaksi",taketiket)
             intent.putExtra("tanggaltransaksi",taketanggal)
             intent.putExtra("hargakeluar",hargamasuk)
+            intent.putExtra("namakeluar",namamasuk)
             startActivity(intent)
         }
     }
