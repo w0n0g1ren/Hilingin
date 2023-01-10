@@ -1,5 +1,6 @@
 package com.example.hilingin
 
+import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,65 +11,41 @@ import android.widget.TextView
 import java.util.*
 
 class TransaksiActivity : AppCompatActivity() {
-    private lateinit var datepicker : Button
-    private lateinit var selectedDateTV : TextView
-    private lateinit var nama : EditText
-    private lateinit var telepon : EditText
-    private lateinit var email : EditText
-    private lateinit var tiket : EditText
+    private lateinit var nama: EditText
+    private lateinit var telepon: EditText
+    private lateinit var email: EditText
+    private lateinit var jumlah: EditText
     private lateinit var button: Button
-    private lateinit var taketanggal2 : String
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_transaksi)
-
-        button = findViewById(R.id.pesantiket)
-        nama = findViewById(R.id.namatransaksi)
-        telepon = findViewById(R.id.telepontransaksi)
-        email = findViewById(R.id.emailtransaksi)
-        tiket = findViewById(R.id.jmltikettransaksi)
 
         var hargamasuk = intent.getStringExtra("hargamasuk")
         var namamasuk = intent.getStringExtra("namamasuk")
 //        //date
 //
-        datepicker = findViewById(R.id.idBtnPickDate)
-        selectedDateTV = findViewById(R.id.tampiltanggal)
-        datepicker.setOnClickListener {
-            val c = Calendar.getInstance()
-            val year = c.get(Calendar.YEAR)
-            val month = c.get(Calendar.MONTH)
-            val day = c.get(Calendar.DAY_OF_MONTH)
-            val datePickerDialog = DatePickerDialog(
-                this,
-                { view, year, monthOfYear, dayOfMonth ->
-                    selectedDateTV.text = (dayOfMonth.toString() + "-" + (monthOfYear + 1) + "-" + year)
 
-                },
-                year,
-                month,
-                day)
-            datePickerDialog.show()
-        }
+        nama = findViewById(R.id.etnama)
+        telepon = findViewById(R.id.etnomor)
+        email = findViewById(R.id.etemail)
+        jumlah = findViewById(R.id.etjumlah)
+        button = findViewById(R.id.btn)
 
-        taketanggal2 = selectedDateTV.toString()
-//
-//
-        var takenama = nama.text.toString()
-        var taketelepon = telepon.text.toString()
-        var takeemail = email.text.toString()
-        var taketiket = tiket.text.toString()
-        var taketanggal = taketanggal2
-//
         button.setOnClickListener {
+            var nama = nama.text.toString()
+            var telepon = telepon.text.toString()
+            var email = email.text.toString()
+            var jumlah = jumlah.text.toString()
+
             val intent = Intent(this,CheckOutActivity::class.java)
-            intent.putExtra("namatransaksi",takenama)
-            intent.putExtra("telepontransaksi",taketelepon)
-            intent.putExtra("emailtransaksi",takeemail)
-            intent.putExtra("tikettransaksi",taketiket)
-            intent.putExtra("tanggaltransaksi",taketanggal)
-            intent.putExtra("hargakeluar",hargamasuk)
-            intent.putExtra("namakeluar",namamasuk)
+            intent.putExtra("nama",nama)
+            intent.putExtra("email",email)
+            intent.putExtra("jumlah",jumlah)
+            intent.putExtra("nomor",telepon)
+            intent.putExtra("tiket",hargamasuk)
+            intent.putExtra("wisata",namamasuk)
             startActivity(intent)
         }
     }

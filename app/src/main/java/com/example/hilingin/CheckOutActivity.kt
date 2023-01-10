@@ -1,5 +1,6 @@
 package com.example.hilingin
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -7,45 +8,40 @@ import android.widget.TextView
 import org.w3c.dom.Text
 
 class CheckOutActivity : AppCompatActivity() {
-    private lateinit var namaCheckOut : TextView
-    private lateinit var tanggalCheckOut : TextView
-    private lateinit var tempatCheckOut : TextView
-    private lateinit var jumlahCheckOut : TextView
-    private lateinit var hargaCheckOut : TextView
-    private lateinit var totalCheckOut : TextView
-    private lateinit var emailCheckOut : TextView
-    private lateinit var teleponCheckOut : TextView
-    private lateinit var bayarButton : Button
+    private lateinit var nama: TextView
+    private lateinit var telepon: TextView
+    private lateinit var jumlah: TextView
+    private lateinit var email: TextView
+    private lateinit var wisata: TextView
+    private lateinit var tiket: TextView
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_check_out)
 
-        namaCheckOut = findViewById(R.id.checkoutnama)
-        tanggalCheckOut = findViewById(R.id.checkouttanggal)
-        tempatCheckOut = findViewById(R.id.checkouttempat)
-        jumlahCheckOut = findViewById(R.id.checkouttiket)
-        hargaCheckOut = findViewById(R.id.checkoutharga)
-        totalCheckOut = findViewById(R.id.checkouttotal)
-        bayarButton = findViewById(R.id.bayarbuttoncheckout)
 
-        var nama = intent.getStringExtra("namatransaksi")
-        var telepon = intent.getStringExtra("telepontransaksi")
-        var email = intent.getStringExtra("emailtransaksi")
-        var tiket = intent.getStringExtra("tikettransaksi").toString().toInt()
-        var tanggal = intent.getStringExtra("tanggaltransaksi")
-        var harga = intent.getStringExtra("hargakeluar").toString().toInt()
-        var tempat = intent.getStringExtra("namakeluar")
+        nama = findViewById(R.id.tvnama)
+        telepon = findViewById(R.id.tvtelepon)
+        jumlah = findViewById(R.id.tvjumlah)
+        email = findViewById(R.id.tvemail)
+        wisata = findViewById(R.id.tvwisata)
+        tiket = findViewById(R.id.tvtiket)
 
-        var total = tiket*harga
+        var getnama = intent.getStringExtra("nama")
+        var gettelepon = intent.getStringExtra("nomor")
+        var getjumlah = intent.getStringExtra("jumlah").toString().toInt()
+        var getemail = intent.getStringExtra("email")
+        var getharga = intent.getStringExtra("tiket").toString().toInt()
+        var getwisata = intent.getStringExtra("wisata")
 
-        namaCheckOut.text = nama
-        teleponCheckOut.text = telepon
-        tempatCheckOut.text = tempat
-        emailCheckOut.text = email
-        jumlahCheckOut.text = tiket.toString()
-        tanggalCheckOut.text = tanggal
-        hargaCheckOut.text = harga.toString()
-        totalCheckOut.text = total.toString()
+        var total = getharga * getjumlah
+
+        nama.text = getnama.toString()
+        telepon.text = gettelepon.toString()
+        jumlah.text = total.toString()
+        email.text = getemail.toString()
+        wisata.text = getwisata.toString()
+        tiket.text = getharga.toString()
     }
 }
