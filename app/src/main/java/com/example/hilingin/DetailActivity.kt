@@ -42,7 +42,7 @@ class DetailActivity : AppCompatActivity() {
         button.setOnClickListener {
             val intent = Intent(this,TransaksiActivity::class.java)
             intent.putExtra("hargamasuk",harga2)
-            intent.putExtra("namamasuk",nama2)
+            intent.putExtra("namamasuk",harga2)
             startActivity(intent)
         }
 
