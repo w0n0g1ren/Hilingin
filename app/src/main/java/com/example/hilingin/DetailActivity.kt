@@ -25,7 +25,7 @@ class DetailActivity : AppCompatActivity() {
         keterangan = findViewById(R.id.penjelasandetail)
         lokasi = findViewById(R.id.lokasidetail)
         image = findViewById(R.id.gambardetail)
-        button = findViewById(R.id.buttonbayar)
+        button = findViewById(R.id.buttontransaksi)
 
         var nama2 = intent.getStringExtra("nama")
         var harga2 = intent.getStringExtra("harga")

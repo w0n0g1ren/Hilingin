@@ -85,7 +85,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/buttonbayar"
+                android:id="@+id/buttontransaksi"
                 android:text="Pesan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                 android:text="Harga"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/buttonbayar"
+                app:layout_constraintEnd_toStartOf="@+id/buttontransaksi"
                 app:layout_constraintHorizontal_bias="0.283"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

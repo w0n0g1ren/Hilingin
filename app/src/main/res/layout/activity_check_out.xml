@@ -10,6 +10,7 @@
     tools:context=".CheckOutActivity">
 
     <TextView
+        android:fontFamily="@font/dmsans_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30dp"
@@ -22,10 +23,12 @@
         android:background="#a6a6a6"
         android:layout_margin="10dp"
         android:layout_height="1dp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:orientation="vertical"
             android:gravity="center"
@@ -33,6 +36,7 @@
             android:layout_height="300dp">
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:text="Nama"
                 android:layout_marginBottom="15dp"
                 android:textSize="15dp"
@@ -40,12 +44,15 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:text="Telepon"
                 android:layout_marginBottom="15dp"
                 android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:text="Email"
                 android:layout_marginBottom="15dp"
                 android:textSize="15dp"
@@ -53,6 +60,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:text="Wisata"
                 android:layout_marginBottom="15dp"
                 android:textSize="15dp"
@@ -60,6 +68,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:text="Harga Tiket"
                 android:layout_marginBottom="15dp"
                 android:textSize="15dp"
@@ -67,6 +76,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:text="Total"
                 android:layout_marginTop="30dp"
                 android:textStyle="bold"
@@ -83,6 +93,7 @@
             android:layout_height="300dp">
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:id="@+id/tvnama"
                 android:layout_marginBottom="15dp"
                 android:textAlignment="textEnd"
@@ -92,6 +103,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:id="@+id/tvtelepon"
                 android:layout_marginBottom="15dp"
                 android:textAlignment="textEnd"
@@ -99,7 +111,9 @@
                 android:textSize="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:id="@+id/tvemail"
                 android:layout_marginBottom="15dp"
                 android:textAlignment="textEnd"
@@ -109,6 +123,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:id="@+id/tvwisata"
                 android:layout_marginBottom="15dp"
                 android:textAlignment="textEnd"
@@ -118,6 +133,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:id="@+id/tvtiket"
                 android:layout_marginBottom="15dp"
                 android:textAlignment="textEnd"
@@ -127,6 +143,7 @@
                 android:layout_height="wrap_content"/>
 
             <TextView
+                android:fontFamily="@font/dmsans_medium"
                 android:id="@+id/tvjumlah"
                 android:layout_marginTop="30dp"
                 android:textAlignment="textEnd"
@@ -144,5 +161,12 @@
         android:layout_margin="10dp"
         android:background="#a6a6a6"
         android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btnbayar"
+        android:layout_marginTop="30dp"
+        android:text="bayar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
