@@ -64,7 +64,7 @@ class CheckOutActivity : AppCompatActivity() {
 
         var email = getemail.toString()
 
-
+        var total2 = total.toString()
         buttonMidtrans.setOnClickListener {
             database= FirebaseDatabase.getInstance().getReference("Transaksi")
             var db = database.push().key!!
@@ -81,10 +81,6 @@ class CheckOutActivity : AppCompatActivity() {
             val intent = packageManager.getLaunchIntentForPackage("com.example.kotlin_payment_gateway")
 
             if (intent != null){
-                intent.putExtra("nama",getnama)
-                intent.putExtra("email",getemail)
-                intent.putExtra("phone",gettelepon)
-                intent.putExtra("total",total)
                 startActivity(intent)
             }
         }
